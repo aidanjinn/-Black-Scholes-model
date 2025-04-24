@@ -106,7 +106,7 @@ while True:
             SYMBOL = input("Enter Stock Ticker (e.g., AAPL, MSFT): ").upper().strip()
             OPTION = input("Enter Option Type (CALL OR PUT): ").lower().strip()
 
-            if SYMBOL.lower() or OPTION.lower() == 'exit':
+            if SYMBOL.lower() == 'exit' or OPTION.lower() == 'exit':
                 exit()
 
             if OPTION != 'call' and OPTION != 'put':
